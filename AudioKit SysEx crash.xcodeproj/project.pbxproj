@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		37148EAB25B4351C006AEE32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37148EAA25B4351C006AEE32 /* ContentView.swift */; };
 		37148EAD25B4351E006AEE32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37148EAC25B4351E006AEE32 /* Assets.xcassets */; };
 		37148EB025B4351E006AEE32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37148EAF25B4351E006AEE32 /* Preview Assets.xcassets */; };
+		37148EBA25B435E3006AEE32 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37148EB925B435E3006AEE32 /* AudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37148EBA25B435E3006AEE32 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = "AudioKit SysEx crash";
+			packageProductDependencies = (
+				37148EB925B435E3006AEE32 /* AudioKit */,
+			);
 			productName = "AudioKit SysEx crash";
 			productReference = 37148EA525B4351C006AEE32 /* AudioKit SysEx crash.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 37148E9C25B4351C006AEE32;
+			packageReferences = (
+				37148EB825B435E3006AEE32 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 37148EA625B4351C006AEE32 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37148EB825B435E3006AEE32 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				branch = "v5-main";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37148EB925B435E3006AEE32 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37148EB825B435E3006AEE32 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37148E9D25B4351C006AEE32 /* Project object */;
 }
